@@ -1,0 +1,12 @@
+---
+title: "Data Collection"
+author: "Jeremiah Lewis"
+format:
+  html:
+    code-fold: false
+number-sections: true
+---
+
+## Data Availability {#sec-data-availability}
+
+Here we talk about data availability

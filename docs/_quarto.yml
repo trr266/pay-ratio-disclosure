@@ -1,0 +1,26 @@
+---
+execute:
+  cache: true
+
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Template"
+  output-file: "template-project"
+  author: "Jeremiah Lewis & Collaborators"
+  date: "2024-03-28"
+  repo-url: https://github.com/trr266/quarto-template-data-website
+  repo-actions: [issue, edit]
+  repo-subdir: docs
+  chapters:
+    - index.qmd
+    - data-collection.qmd
+    - data-preview.qmd
+
+format:
+  html:
+    theme: cosmo
+    fig-format: retina
+    code-fold: false
