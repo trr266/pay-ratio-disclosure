@@ -6,27 +6,37 @@
     "section": "",
     "text": "1 Sample Data Product\nA project of the [Open Science Data Center][c02]\n\nResearch Data Access for the European Single Electronic Format (ESEF)",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Intro</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro</span>"
+    ]
+  },
+  {
+    "objectID": "pr-viz.html",
+    "href": "pr-viz.html",
+    "title": "1  Pay Ratio Disclosure Tool",
+    "section": "",
+    "text": "2 THe Pay Ratio Visualization happens here",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pay Ratio Disclosure Tool</span>"
     ]
   },
   {
     "objectID": "data-collection.html",
     "href": "data-collection.html",
-    "title": "2  Data Collection",
+    "title": "3  Data Collection",
     "section": "",
-    "text": "2.1 Data Availability\nHere we talk about data availability",
+    "text": "3.1 Data Availability\nHere we talk about data availability",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Collection</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Collection</span>"
     ]
   },
   {
     "objectID": "data-preview.html",
     "href": "data-preview.html",
-    "title": "3  Data Preview",
+    "title": "4  Data Preview",
     "section": "",
-    "text": "4 Data Preview\n\n\n\n\n\n\nImportant\n\n\n\nUntil this disclaimer is removed, all data displayed here is for technical testing purposes and is not suitable for data analysis.\nFurthermore, at the moment the data is provided without any license terms, so please use at your own risk.\n\n\n\nDataset 1Dataset 2\n\n\nRaw (beta) data available for inspection here.\n\nconcepts_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(concepts_data, {sort: \"frequency\", reverse: true, width: {concept: 140,},})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRaw (beta) data available for inspection here.\n\nprofit_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(profit_data)",
+    "text": "5 Data Preview\n\n\n\n\n\n\nImportant\n\n\n\nUntil this disclaimer is removed, all data displayed here is for technical testing purposes and is not suitable for data analysis.\nFurthermore, at the moment the data is provided without any license terms, so please use at your own risk.\n\n\n\nDataset 1Dataset 2\n\n\nRaw (beta) data available for inspection here.\n\nconcepts_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(concepts_data, {sort: \"frequency\", reverse: true, width: {concept: 140,},})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRaw (beta) data available for inspection here.\n\nprofit_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(profit_data)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Preview</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Preview</span>"
     ]
   }
 ]
