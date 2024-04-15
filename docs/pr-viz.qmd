@@ -1,0 +1,10 @@
+---
+title: "Pay Ratio Disclosure Tool"
+author: "Victor Schauer"
+jupyter: python3
+format:
+  html:
+    code-fold: false
+---
+
+# THe Pay Ratio Visualization happens here
