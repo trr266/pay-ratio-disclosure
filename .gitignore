@@ -28,3 +28,4 @@ data-coverage_files/
 *.ipynb
 .cache/
 .jupyter_cache/
+.Rproj.user

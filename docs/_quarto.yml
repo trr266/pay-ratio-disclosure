@@ -16,9 +16,9 @@ book:
   repo-subdir: docs
   chapters:
     - pr-viz.qmd
-    - index.qmd
-    - data-collection.qmd
-    - data-preview.qmd
+    - background.qmd
+    - data-collection-process.qmd
+    - data-set.qmd
 
 format:
   html:

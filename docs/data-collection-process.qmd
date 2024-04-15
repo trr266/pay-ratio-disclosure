@@ -1,6 +1,6 @@
 ---
-title: "Data Collection"
-author: "Jeremiah Lewis"
+title: "Data Collection Process"
+author: "Victor Schauer"
 format:
   html:
     code-fold: false
