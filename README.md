@@ -1,8 +1,4 @@
-# GitHub Actions / Template
-
-A project of the [Open Science Data Center][c02]
-
-> Template repository for creating a data dashboard / website using Quarto.
+# Pay Ratio Disclosure in France
 
 ## Project Funding
 
