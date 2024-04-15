@@ -1,6 +1,6 @@
 ---
-title: "An introduction to a great dataset"
-author: "Jeremiah Lewis"
+title: "Intro"
+author: "Victor Schauer"
 jupyter: python3
 execute:
   echo: false
