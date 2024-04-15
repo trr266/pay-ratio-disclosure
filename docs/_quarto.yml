@@ -7,11 +7,11 @@ project:
   output-dir: _book
 
 book:
-  title: "Template"
+  title: "PR App"
   output-file: "template-project"
-  author: "Jeremiah Lewis & Collaborators"
-  date: "2024-03-28"
-  repo-url: https://github.com/trr266/quarto-template-data-website
+  author: "Victor Schauer"
+  date: "2024-04-15"
+  repo-url: https://github.com/trr266/quarto-template-data-website-2
   repo-actions: [issue, edit]
   repo-subdir: docs
   chapters:
