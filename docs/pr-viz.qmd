@@ -1,10 +1,10 @@
 ---
 title: "Pay Ratio Disclosure Tool"
 author: "Victor Schauer"
-jupyter: python3
+knitr: true
 format:
   html:
     code-fold: false
 ---
 
-# The Pay Ratio Visualization happens here
+Below you find three tabs to dive into the pay ratio dataset: 1) a plot where you can compare firms' pay ratios with all other firms in the dataset over the years 2015 - 2021, 2) a table containing the complete data set 3) information on the creator and affiliations (to be provided)

@@ -9,4 +9,4 @@ number-sections: true
 
 ## Data Availability {#sec-data-availability}
 
-Here we talk about data availability
+I hand-collect French pay ratio data from French public firms, which form part of the indices CAC40, CACNext20, CACMid60, and CAC Small, as well as further public French firms, which in total comprise 308 firms. According to the features of the regulation, I cover the years 2015 until 2021.\footnote{The information for the years 2015 until 2019 was disclosed in 2019.} Table \ref{tab:sum_stat_firms_obs} details the number of unique firms and observations per index, accounting for missing firms due to data availability constraints. In total, I have data for 217 unique firms. In addition, Figure~\ref{fig:industries} provides an overview of the distribution of industries in the sample.
