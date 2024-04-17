@@ -15,6 +15,7 @@ book:
   repo-actions: [issue, edit]
   repo-subdir: docs
   chapters:
+    - index.qmd
     - pr-viz.qmd
     - background.qmd
     - data-collection-process.qmd
