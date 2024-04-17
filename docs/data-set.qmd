@@ -25,7 +25,7 @@ Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-
 
 ```{ojs}
 //| echo: false
-concepts_data = FileAttachment("sample_data.csv").csv({ typed: true })
+concepts_data = FileAttachment("shiny_pr_template_CEO_040424.csv").csv({ typed: true })
 
 Inputs.table(concepts_data, {sort: "frequency", reverse: true, width: {concept: 140,},})
 ```
