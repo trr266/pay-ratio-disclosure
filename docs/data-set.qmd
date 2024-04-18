@@ -16,7 +16,7 @@ Furthermore, at the moment the data is provided without any license terms, so pl
 
 ```{ojs}
 //| echo: false
-pr_data = FileAttachment("shiny_pr_template_CEO_040424.csv").csv({ typed: true })
+pr_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true })
 
 Inputs.table(pr_data)
 ```
