@@ -20,4 +20,5 @@ pr_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: tru
 
 Inputs.table(pr_data)
 ```
-:::
+
+# Download Button
