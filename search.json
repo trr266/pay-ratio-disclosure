@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "PR App",
+    "title": "Template",
     "section": "",
     "text": "1 Sample Data Product\nA project of the [Open Science Data Center][c02]\n\nResearch Data Access for the European Single Electronic Format (ESEF)",
     "crumbs": [
@@ -10,43 +10,23 @@
     ]
   },
   {
-    "objectID": "pr-viz.html",
-    "href": "pr-viz.html",
-    "title": "2  Pay Ratio Disclosure Tool",
+    "objectID": "data-collection.html",
+    "href": "data-collection.html",
+    "title": "2  Data Collection Process",
     "section": "",
-    "text": "3 The Pay Ratio Visualization happens here",
+    "text": "2.1 Data Availability\nI hand-collect French pay ratio data from French public firms, which form part of the indices CAC40, CACNext20, CACMid60, and CAC Small, as well as further public French firms, which in total comprise 308 firms. According to the features of the regulation, I cover the years 2015 until 2021. Table \\(\\ref{tab:sum_stat_firms_obs}\\) details the number of unique firms and observations per index, accounting for missing firms due to data availability constraints. In total, I have data for 217 unique firms. In addition, Figure~\\(\\ref{fig:industries}\\) provides an overview of the distribution of industries in the sample",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Pay Ratio Disclosure Tool</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Collection Process</span>"
     ]
   },
   {
-    "objectID": "background.html",
-    "href": "background.html",
-    "title": "3  Intro",
+    "objectID": "data-preview.html",
+    "href": "data-preview.html",
+    "title": "3  Data Preview",
     "section": "",
-    "text": "4 Sample Data Product\nA project of the [Open Science Data Center][c02]\n\nResearch Data Access for the European Single Electronic Format (ESEF)",
+    "text": "4 Data Preview\n\n\n\n\n\n\nImportant\n\n\n\nUntil this disclaimer is removed, all data displayed here is for technical testing purposes and is not suitable for data analysis.\nFurthermore, at the moment the data is provided without any license terms, so please use at your own risk.\n\n\n\nDataset 1Dataset 2\n\n\nRaw (beta) data available for inspection here.\n\nconcepts_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(concepts_data)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRaw (beta) data available for inspection here.\n\nprofit_data = FileAttachment(\"template_pr_quarto_final_180424.csv\").csv({ typed: true })\n\nInputs.table(profit_data)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intro</span>"
-    ]
-  },
-  {
-    "objectID": "data-collection-process.html",
-    "href": "data-collection-process.html",
-    "title": "4  Data Collection Process",
-    "section": "",
-    "text": "4.1 Data Availability\nHere we talk about data availability",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Collection Process</span>"
-    ]
-  },
-  {
-    "objectID": "data-set.html",
-    "href": "data-set.html",
-    "title": "5  Data Preview",
-    "section": "",
-    "text": "6 Data Preview\n\n\n\n\n\n\nImportant\n\n\n\nUntil this disclaimer is removed, all data displayed here is for technical testing purposes and is not suitable for data analysis.\nFurthermore, at the moment the data is provided without any license terms, so please use at your own risk.\n\n\n\nDataset 1Dataset 2\n\n\nRaw (beta) data available for inspection here.\n\nconcepts_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(concepts_data, {sort: \"frequency\", reverse: true, width: {concept: 140,},})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRaw (beta) data available for inspection here.\n\nprofit_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(profit_data)",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Preview</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Preview</span>"
     ]
   }
 ]
