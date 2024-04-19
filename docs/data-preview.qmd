@@ -1,24 +1,43 @@
 ---
 title: "Data Preview"
-author: "Victor Schauer"
-engine: knitr
-knitr: true
+author: "Jeremiah Lewis"
 format:
   html:
     code-fold: false
 ---
+# Data Preview
 
-::: callout-important
-Until this disclaimer is removed, all data displayed here is for technical testing purposes and is not suitable for data analysis.
+::: {.callout-important}
+Until this disclaimer is removed, all data displayed here is for
+technical testing purposes and is not suitable for data analysis.
 
 Furthermore, at the moment the data is provided without any license terms, so please use at your own risk.
 :::
 
+
+::: {.panel-tabset}
+
+## Dataset 1
+
+Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website/sample_data.csv).
+
 ```{ojs}
 //| echo: false
-pr_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true })
+concepts_data = FileAttachment("sample_data.csv").csv({ typed: true })
 
-Inputs.table(pr_data)
+Inputs.table(concepts_data)
+//Inputs.table(concepts_data, {sort: "frequency", reverse: true, width: {concept: 140,},})
 ```
 
-# Download Button
+## Dataset 2
+
+Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website/sample_data.csv).
+
+```{ojs}
+//| echo: false
+profit_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true })
+
+Inputs.table(profit_data)
+```
+
+:::
