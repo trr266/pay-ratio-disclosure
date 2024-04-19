@@ -20,7 +20,7 @@ Furthermore, at the moment the data is provided without any license terms, so pl
 
 ## Dataset
 
-Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website-2/template_pr_quarto_final_180424.csv).
+Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website-2/template_pr_quarto_final_190424.csv).
 
 
 ```{ojs}
@@ -29,7 +29,7 @@ import { interval } from '@mootari/range-slider'
 viewof YearSlider = interval([2015, 2021], {
   step: 1,
   value: [2015, 2021],
-  label: 'Please year range',
+  label: 'Please select year range',
 })
 
 viewof industry = Inputs.checkbox(
