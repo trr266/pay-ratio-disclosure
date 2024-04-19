@@ -19,7 +19,6 @@ book:
     - pr-viz.qmd
     - data-collection-process.qmd
     - data-set.qmd
-    - TestDoc.qmd
 
 format:
   html:
