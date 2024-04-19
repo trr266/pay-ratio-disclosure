@@ -4,6 +4,7 @@ author: "Jeremiah Lewis"
 format:
   html:
     code-fold: false
+echo: false
 ---
 # Data Preview
 
@@ -19,14 +20,56 @@ Furthermore, at the moment the data is provided without any license terms, so pl
 
 ## Dataset
 
-Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website/sample_data.csv).
+Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website-2/template_pr_quarto_final_180424.csv).
+
 
 ```{ojs}
-//| echo: false
-profit_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true })
+import { interval } from '@mootari/range-slider'
 
-Inputs.table(profit_data)
+viewof YearSlider = interval([2015, 2021], {
+  step: 1,
+  value: [2015, 2021],
+  label: 'Please select year range',
+});
+
 ```
+
+<!-- ```{ojs} -->
+<!-- import {interval} from '@mootari/range-slider' -->
+<!-- //| panel: input -->
+<!-- viewof year = interval([2015, 2021], { -->
+<!--   step: 1, -->
+<!--   value: [2015, 2021], -->
+<!--   label: "Year" -->
+<!-- }) -->
+<!-- ``` -->
+
+
+```{ojs}
+//Inputs.table(filtered, {sort: "isin_random", reverse: true, width: {concept: 140}})
+
+Inputs.table(filtered, {sort: [{column: "isin_random", direction: "desc"}, {column: "year", direction: "desc"}], width: {concept: 140}})
+```
+
+```{ojs}
+data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true })
+```
+
+
+```{ojs}
+filtered = data.filter(function(row) {
+  return YearSlider[0] <= row.year && YearSlider[1] >= row.year;
+         //islands.includes(penguin.island);
+})
+```
+
+
+<!-- ```{ojs} -->
+<!-- //| echo: false -->
+<!-- profit_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true }) -->
+
+<!-- Inputs.table(profit_data) -->
+<!-- ``` -->
 
 ## Visualization
 
