@@ -7,9 +7,9 @@ project:
   output-dir: _book
 
 book:
-  title: "Template"
+  title: "Pay Ratio Disclosure"
   output-file: "template-project"
-  author: "Jeremiah Lewis & Collaborators"
+  author: "Victor Schauer"
   date: "2024-03-28"
   repo-url: https://trr266.github.io/quarto-template-data-website-2/
   repo-actions: [issue, edit]
