@@ -29,7 +29,7 @@ import { interval } from '@mootari/range-slider'
 viewof YearSlider = interval([2015, 2021], {
   step: 1,
   value: [2015, 2021],
-  label: 'Please select year range',
+  label: 'Please year range',
 })
 
 viewof industry = Inputs.checkbox(
