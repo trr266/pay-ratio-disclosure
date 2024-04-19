@@ -11,7 +11,7 @@ book:
   output-file: "template-project"
   author: "Jeremiah Lewis & Collaborators"
   date: "2024-03-28"
-  repo-url: https://github.com/trr266/quarto-template-data-website
+  repo-url: https://trr266.github.io/quarto-template-data-website-2/
   repo-actions: [issue, edit]
   repo-subdir: docs
   chapters:
