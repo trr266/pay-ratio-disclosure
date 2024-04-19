@@ -30,19 +30,19 @@ viewof YearSlider = interval([2015, 2021], {
   step: 1,
   value: [2015, 2021],
   label: 'Please select year range',
-});
+})
 
+viewof industry = Inputs.checkbox(
+  ["Consumer", "Manufacturing", "Energy", "Chemicals",
+  "Business Equipment", "Telecommunication",
+  "Utilities", "Shops", "Healthcare", "Finance", "Other"], 
+  { value: ["Consumer", "Manufacturing", "Energy", "Chemicals",
+            "Business Equipment", "Telecommunication",
+            "Utilities", "Shops", "Healthcare", "Finance", "Other"], 
+  label: "Please select industry:"
+  }
+)
 ```
-
-<!-- ```{ojs} -->
-<!-- import {interval} from '@mootari/range-slider' -->
-<!-- //| panel: input -->
-<!-- viewof year = interval([2015, 2021], { -->
-<!--   step: 1, -->
-<!--   value: [2015, 2021], -->
-<!--   label: "Year" -->
-<!-- }) -->
-<!-- ``` -->
 
 
 ```{ojs}
@@ -52,13 +52,14 @@ Inputs.table(filtered, {sort: [{column: "isin_random", direction: "desc"}, {colu
 ```
 
 ```{ojs}
-data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true })
+data = FileAttachment("template_pr_quarto_final_190424.csv").csv({ typed: true })
 ```
 
 
 ```{ojs}
 filtered = data.filter(function(row) {
-  return YearSlider[0] <= row.year && YearSlider[1] >= row.year;
+  return YearSlider[0] <= row.year && YearSlider[1] >= row.year &&
+  industry.includes(row.FF_12_consumer_combined_text);
          //islands.includes(penguin.island);
 })
 ```
