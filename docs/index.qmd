@@ -1,11 +1,13 @@
 ---
-title: "Intro"
-author: "Victor Schauer"
-knitr: true
+title: "An introduction to a great dataset"
+author: "Jeremiah Lewis"
+jupyter: python3
 execute:
   echo: false
 ---
 
-This shiny dashboard is a demo version that shows data about CEO-to-employee pay ratios from France. Its goal is to inform researchers, regulators, as well as the interested public about the pay ratios reported by French public firms. The data covers the years 2015 until 2021.
+# Sample Data Product
 
-Below you find three tabs to dive into the pay ratio dataset: 1) a plot where you can compare firms' pay ratios with all other firms in the dataset over the years 2015 - 2021, 2) a table containing the complete data set 3) information on the creator and affiliations (to be provided
+A project of the [Open Science Data Center][c02]
+
+> Research Data Access for the European Single Electronic Format (ESEF)

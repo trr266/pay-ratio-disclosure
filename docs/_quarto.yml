@@ -7,18 +7,17 @@ project:
   output-dir: _book
 
 book:
-  title: "PR App"
+  title: "Template"
   output-file: "template-project"
-  author: "Victor Schauer"
-  date: "2024-04-15"
-  repo-url: https://github.com/trr266/quarto-template-data-website-2
+  author: "Jeremiah Lewis & Collaborators"
+  date: "2024-03-28"
+  repo-url: https://github.com/trr266/quarto-template-data-website
   repo-actions: [issue, edit]
   repo-subdir: docs
   chapters:
     - index.qmd
-    - pr-viz.qmd
-    - data-collection-process.qmd
-    - data-set.qmd
+    - data-collection.qmd
+    - data-preview.qmd
 
 format:
   html:
