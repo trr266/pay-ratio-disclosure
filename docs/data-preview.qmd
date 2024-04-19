@@ -17,9 +17,8 @@ Furthermore, at the moment the data is provided without any license terms, so pl
 
 ::: {.panel-tabset}
 
-## Dataset 1
+## Visualization
 
-Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website/sample_data.csv).
 
 ```{ojs}
 //| echo: false
@@ -29,7 +28,7 @@ Inputs.table(concepts_data)
 //Inputs.table(concepts_data, {sort: "frequency", reverse: true, width: {concept: 140,},})
 ```
 
-## Dataset 2
+## Dataset
 
 Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website/sample_data.csv).
 
