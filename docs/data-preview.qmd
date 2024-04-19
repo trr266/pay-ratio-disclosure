@@ -18,37 +18,68 @@ Furthermore, at the moment the data is provided without any license terms, so pl
 
 ::: {.panel-tabset}
 
-## Dataset
-
-Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website-2/template_pr_quarto_final_190424.csv).
+## Visualization firm
 
 
 ```{ojs}
 import { interval } from '@mootari/range-slider'
 
-viewof YearSlider = interval([2015, 2021], {
+viewof YearSlider_firm = interval([2015, 2021], {
   step: 1,
   value: [2015, 2021],
   label: 'Please select year range',
 })
 
-viewof industry = Inputs.checkbox(
+viewof isin_random = Inputs.select(
+  Array.from(new Set(data.map(d => d.isin_random))), 
+  {value: "", label: "Please select entity name"})
+
+filtered_firm = data.filter(function(row) {
+  return YearSlider_firm[0] <= row.year && YearSlider_firm[1] >= row.year &&
+  isin_random == row.isin_random;
+  //industry.includes(row.FF_12_consumer_combined_text);
+         //islands.includes(penguin.island);
+})
+
+
+import {Plot, lines} from '@observablehq/plot';
+
+Plot.line(filtered_firm, {x: "year", y: "pr_avg", label: "pr_avg"})
+    .plot({
+        x: {
+            grid: true,
+            format: "d" // Use "d" format to display years without a thousand separator
+        },
+        y: {
+            grid: true,
+            domain: [0, 100], // Set the domain of the y-axis to be between 0 and 100
+            stroke: "steelblue" // Set the line color to blue
+        }
+    });
+```
+
+## Visualization industry
+
+```{ojs}
+
+
+viewof industry = Inputs.select(
   ["Consumer", "Manufacturing", "Energy", "Chemicals",
   "Business Equipment", "Telecommunication",
   "Utilities", "Shops", "Healthcare", "Finance", "Other"], 
-  { value: ["Consumer", "Manufacturing", "Energy", "Chemicals",
-            "Business Equipment", "Telecommunication",
-            "Utilities", "Shops", "Healthcare", "Finance", "Other"], 
-  label: "Please select industry:"
-  }
-)
+  {value: "", label: "Please select industry"})
+
+
+
 ```
+
+## Dataset
 
 
 ```{ojs}
 //Inputs.table(filtered, {sort: "isin_random", reverse: true, width: {concept: 140}})
 
-Inputs.table(filtered, {sort: [{column: "isin_random", direction: "desc"}, {column: "year", direction: "desc"}], width: {concept: 140}})
+Inputs.table(data, {sort: [{column: "isin_random", direction: "desc"}, {column: "year", direction: "desc"}], width: {concept: 200}})
 ```
 
 ```{ojs}
@@ -56,31 +87,17 @@ data = FileAttachment("template_pr_quarto_final_190424.csv").csv({ typed: true }
 ```
 
 
-```{ojs}
-filtered = data.filter(function(row) {
-  return YearSlider[0] <= row.year && YearSlider[1] >= row.year &&
-  industry.includes(row.FF_12_consumer_combined_text);
-         //islands.includes(penguin.island);
-})
-```
+
+
+Raw Data: [Download](https://trr266.github.io/quarto-template-data-website-2/template_pr_quarto_final_190424.csv).
 
 
 <!-- ```{ojs} -->
 <!-- //| echo: false -->
-<!-- profit_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true }) -->
+<!-- concepts_data = FileAttachment("sample_data.csv").csv({ typed: true }) -->
 
-<!-- Inputs.table(profit_data) -->
+<!-- Inputs.table(concepts_data) -->
+<!-- //Inputs.table(concepts_data, {sort: "frequency", reverse: true, width: {concept: 140,},}) -->
 <!-- ``` -->
-
-## Visualization
-
-
-```{ojs}
-//| echo: false
-concepts_data = FileAttachment("sample_data.csv").csv({ typed: true })
-
-Inputs.table(concepts_data)
-//Inputs.table(concepts_data, {sort: "frequency", reverse: true, width: {concept: 140,},})
-```
 
 :::
