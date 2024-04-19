@@ -17,17 +17,6 @@ Furthermore, at the moment the data is provided without any license terms, so pl
 
 ::: {.panel-tabset}
 
-## Visualization
-
-
-```{ojs}
-//| echo: false
-concepts_data = FileAttachment("sample_data.csv").csv({ typed: true })
-
-Inputs.table(concepts_data)
-//Inputs.table(concepts_data, {sort: "frequency", reverse: true, width: {concept: 140,},})
-```
-
 ## Dataset
 
 Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-template-data-website/sample_data.csv).
@@ -37,6 +26,17 @@ Raw (beta) data available for inspection [here](https://trr266.github.io/quarto-
 profit_data = FileAttachment("template_pr_quarto_final_180424.csv").csv({ typed: true })
 
 Inputs.table(profit_data)
+```
+
+## Visualization
+
+
+```{ojs}
+//| echo: false
+concepts_data = FileAttachment("sample_data.csv").csv({ typed: true })
+
+Inputs.table(concepts_data)
+//Inputs.table(concepts_data, {sort: "frequency", reverse: true, width: {concept: 140,},})
 ```
 
 :::
