@@ -222,13 +222,14 @@ Important
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Visualization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Dataset</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Dataset</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Visualization</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Raw (beta) data available for inspection <a href="https://trr266.github.io/quarto-template-data-website/sample_data.csv">here</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="25" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 24;"><span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>concepts_data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"sample_data.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(concepts_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>profit_data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"template_pr_quarto_final_180424.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(profit_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -246,11 +247,10 @@ Important
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Raw (beta) data available for inspection <a href="https://trr266.github.io/quarto-template-data-website/sample_data.csv">here</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="37" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 36;"><span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>profit_data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"template_pr_quarto_final_180424.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(profit_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="36" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 35;"><span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>concepts_data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"sample_data.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(concepts_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -275,7 +275,7 @@ Important
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImNvbmNlcHRzX2RhdGEgPSBGaWxlQXR0YWNobWVudChcInNhbXBsZV9kYXRhLmNzdlwiKS5jc3YoeyB0eXBlZDogdHJ1ZSB9KVxuXG5JbnB1dHMudGFibGUoY29uY2VwdHNfZGF0YSlcbi8vSW5wdXRzLnRhYmxlKGNvbmNlcHRzX2RhdGEsIHtzb3J0OiBcImZyZXF1ZW5jeVwiLCByZXZlcnNlOiB0cnVlLCB3aWR0aDoge2NvbmNlcHQ6IDE0MCx9LH0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJwcm9maXRfZGF0YSA9IEZpbGVBdHRhY2htZW50KFwidGVtcGxhdGVfcHJfcXVhcnRvX2ZpbmFsXzE4MDQyNC5jc3ZcIikuY3N2KHsgdHlwZWQ6IHRydWUgfSlcblxuSW5wdXRzLnRhYmxlKHByb2ZpdF9kYXRhKVxuIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InByb2ZpdF9kYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJ0ZW1wbGF0ZV9wcl9xdWFydG9fZmluYWxfMTgwNDI0LmNzdlwiKS5jc3YoeyB0eXBlZDogdHJ1ZSB9KVxuXG5JbnB1dHMudGFibGUocHJvZml0X2RhdGEpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJjb25jZXB0c19kYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJzYW1wbGVfZGF0YS5jc3ZcIikuY3N2KHsgdHlwZWQ6IHRydWUgfSlcblxuSW5wdXRzLnRhYmxlKGNvbmNlcHRzX2RhdGEpXG4vL0lucHV0cy50YWJsZShjb25jZXB0c19kYXRhLCB7c29ydDogXCJmcmVxdWVuY3lcIiwgcmV2ZXJzZTogdHJ1ZSwgd2lkdGg6IHtjb25jZXB0OiAxNDAsfSx9KVxuIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

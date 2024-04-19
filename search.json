@@ -24,7 +24,7 @@
     "href": "data-preview.html",
     "title": "3  Data Preview",
     "section": "",
-    "text": "4 Data Preview\n\n\n\n\n\n\nImportant\n\n\n\nUntil this disclaimer is removed, all data displayed here is for technical testing purposes and is not suitable for data analysis.\nFurthermore, at the moment the data is provided without any license terms, so please use at your own risk.\n\n\n\nVisualizationDataset\n\n\n\nconcepts_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(concepts_data)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRaw (beta) data available for inspection here.\n\nprofit_data = FileAttachment(\"template_pr_quarto_final_180424.csv\").csv({ typed: true })\n\nInputs.table(profit_data)",
+    "text": "4 Data Preview\n\n\n\n\n\n\nImportant\n\n\n\nUntil this disclaimer is removed, all data displayed here is for technical testing purposes and is not suitable for data analysis.\nFurthermore, at the moment the data is provided without any license terms, so please use at your own risk.\n\n\n\nDatasetVisualization\n\n\nRaw (beta) data available for inspection here.\n\nprofit_data = FileAttachment(\"template_pr_quarto_final_180424.csv\").csv({ typed: true })\n\nInputs.table(profit_data)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconcepts_data = FileAttachment(\"sample_data.csv\").csv({ typed: true })\n\nInputs.table(concepts_data)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Preview</span>"
     ]
