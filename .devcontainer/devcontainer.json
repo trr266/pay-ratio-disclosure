@@ -1,0 +1,23 @@
+{
+	"name": "Debian",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+	   "cacheFrom": "ghcr.io/trr266/pay-ratio-disclosure:main"
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.fontFamily": "monospace",
+		"julia.environmentPath": "."
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"quarto.quarto",
+		"GitHub.copilot"
+	],
+	
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// "onCreateCommand": "julia --project=docs startup_julia.jl"
+}
