@@ -22,7 +22,7 @@ permissions:
 jobs:
   docker:
     runs-on: ubuntu-latest
-    container: ghcr.io/trr266/quarto-template-data-website:main
+    container: ghcr.io/trr266/pay-ratio-disclosure:main
     steps:
       - 
         name: Checkout repository
